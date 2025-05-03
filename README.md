@@ -2,6 +2,7 @@
 This repository contains manual testing documentation for a web application. It includes a detailed test plan, test cases, bug reports, and summary reports focused on core application functionality.
 
 ✅ Features Covered
+
 1.User Login & Registration
 
 2.Password Recovery
