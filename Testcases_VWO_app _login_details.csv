@@ -1,0 +1,51 @@
+,,,,,,Test Template for the vwo.app.com,,,,,,,,,,
+,,,,,,Project Name,VWO,,,,,,,,,
+,,,,,,Module name,Login page,,,,,,,,,
+,,,,,,Created by,T Bhagya,,,,,,,,,
+,,,,,,Created Date,06-05-2025,,,,,,,,,
+,,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+Test Case ID,,Module,,Test Scenario,,Test Steps,Test Data,,,,Expected Result,,,Actual Result,,Status(P/F)
+1,,Login page,,login with valid credentials,,1.Go Login page,Email id : abc123@gmail.com,,,,After login page will redirected to application interface,,,Redirected to application interface,,Pass
+,,,,,,2.Enter valid Email id,Password: Jhon@243,,,,,,,,,
+,,,,,,3.Enter valid password,,,,,,,,,,
+,,,,,,4.click on login button,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+2,,Login Page ,,Login with invalid credentials,,1.Go to login page,Email id :Def123@gmail.com,,,,After login page will redirected to application interface,,,Showing invalid Email Id and invalid Password,,Fail
+,,,,,,2.Enter invalid Email id,Password:123#,,,,,,,,,
+,,,,,,3.Enter invalid Password,,,,,,,,,,
+,,,,,,4.click on login button,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+3,,Login Page,,Login with invalid Email Id,,1. Go to login page,Email id : gef$124@gmail.com,,,,After login page will redirected to application interface,,,Showing invalid Email Id,,Fail
+,,,,,,2. Enter invalid Email Id,Password:Jhon#123,,,,,,,,,
+,,,,,,3. Enter vaild Password,,,,,,,,,,
+,,,,,,4. Click on login button,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+4,,Login Page,,Login with invalid Password,,1.Go to login page,Email id : mark2711@gmail.com,,,,After login page will redirected to application interface,,,Showing invalid Password,,Fail
+,,,,,,2.Enter valid Email Id,Password :abc,,,,,,,,,
+,,,,,,3.Enter invalid Password,,,,,,,,,,
+,,,,,,4.click on login button,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+5,,login page,,Enter Captcha ,,1.Go to login page,Email Id : carl123@gmail.com,,,,After login page will redirected to application interface,,,Redirected to application interface,,Pass
+,,,,,,2. Enter valid Email Id,Password: qwer&123,,,,,,,,,
+,,,,,,3. Enter valid Password,Captcha : Las234$,,,,,,,,,
+,,,,,,4.Enter 6 letter Captcha,,,,,,,,,,
+,,,,,,5.click on login button,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+6,,login page,,Enter wrong Captcha,,1.Go to login page,Email Id : sandra234@gmail.com,,,,After login page will redirected to application interface,,,Enter invalid captcha with 1 missing letter,,Fail
+,,,,,,2. Enter valid email id,Password:abc*123,,,,,,,,,
+,,,,,,3. Enter valid Password,Captcha :AHer2,,,,,,,,,
+,,,,,,4. Enter 6 letters Captcha,,,,,,,,,,
+,,,,,,5. click on login button,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+7,,login page,,Enter wrong Captcha&invalid email id,,1.Go to login page,Email Id :abc123#gmail.com,,,,After login page will redirected to application interface,,,Enter Invalid Email ID & Enter ed wrong captcha with missing special character,,Fail
+,,,,,,2. Enter Invalid Email Id,Password: 1a2bc3,,,,,,,,,
+,,,,,,3.Enter valid Password,Captcha:AfHW1U,,,,,,,,,
+,,,,,,4.Enter 6 letters Captcha with special characters,,,,,,,,,,
+,,,,,,5. Click on login button,,,,,,,,,,
+,,,,,,,,,,,,,,,,
+8,,login page,,Enter Wrong Captcha & invalid Password,,1. Go to login page,Email Id : abc678@gmail.com,,,,After login page will redirected to application page,,,Enter ivalid password & Entered wrong captcha with special character,,Fail
+,,,,,,2.Enter valid Email Id,Password : 333***##,,,,,,,,,
+,,,,,,3. Enter invalid password,Captcha : Tyda5@,,,,,,,,,
+,,,,,,4.Enter 6 letters captcha with no special characters,,,,,,,,,,
+,,,,,,5. click on login button,,,,,,,,,,
