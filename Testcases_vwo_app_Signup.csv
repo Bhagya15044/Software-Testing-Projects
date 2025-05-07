@@ -1,0 +1,113 @@
+,,,,"NO of Passed Test cases: 
+NO of Failed Test cases :",,,,"Test Case for VWO.app.com   
+
+Project name  : VWO application
+Created By  :       T Bhagya
+Module :           Signup page
+Created by :      06-05-2025",,,
+,,,,,,,,,,,
+Test Case Id,,Test Scenario,,Test steps,,Test Data,,Expected Result,Actual result,,Status(P/F)
+1,,Enter User First Name and Last Name,,"1.Go to signup page
+2.Enter First name
+3.Enter Last name",,"First Name: Jhon
+Last Name : Carl",,1. Go to below field with no error,Sucessfully moved to below Field,,PASS
+,,,,,,,,,,,
+2,,Enter User First Name invalid,,"1.Go to Signup page
+2.Enter First name blank space
+3.Enter valid Last name",,"First name : 
+Last Name : kint",,1.Go to below field with no error,User First Name Field must be filled,,FAIL
+,,,,,,,,,,,
+3,,Enter User Last Name invalid,,"1.Go to signup page
+2.Enter valid First name
+3. Enter Last Name with Special characters",,"First Name : Mint
+Second Name: %hal*",,1. Go to below field with no error,No Special characters are allowed,,FAIL
+,,,,,,,,,,,
+4,,Enter First Name invalid & Last Name invalid,,"1. Go to signup page
+2.Enter First name with Emoji
+3.Enter Last Name with Emoji",,"First Name : Wase ):
+Second Name :deu ):",,1. Go to below field with no error,Emoji's are not allowed,,FAIL
+,,,,,,,,,,,
+5,,Enter Last Name invalid,,"1.Go to Signup page
+2.Enter valid First Name
+3. Enter Last name with <2 Characters",,"First Name : Feet
+Last Name : R",,1. Go to below field with no error,>2+ characters are required,,FAIL
+,,,,,,,,,,,
+6,,Enter First Name invalid,,"1.Go to Signup page
+2. Enter First name only numbers
+3. Enter valid  Last name ",,"First name : 1122334
+Last Name : Jhon",,1. Go to below field with no error,Numbers are not allowed,,FAIL
+,,,,,,,,,,,
+7,,Enter Email ID,,"1. Go signup page
+2. Enter above fields with valid details
+3. Enter valid Email Id",,Email ID : jane123@gmail.com,,1. Go to below field with no error,Sucessfully moved to next field,,PASS
+,,,,,,,,,,,
+8,,Enter invalid Email ID,,"1. Go to signup page
+2. Enter above fields with valid details
+3.Enter Email id with Capital letters
+",,Email Id : JHON12@gmail.com,,1. Go to below field with no error,Email Id should be case sensitive ,,FAIL
+,,,,,,,,,,,
+9,,Enter Password,,"1. Go to signup page 
+2. Enter above fields with valid details
+3. Enter valid  Password",,Password : Jhon#123,,1. Go to below feildswith no error,Sucessfully moved to below field,,PASS
+,,,,,,,,,,,
+10,,Enter invalid Email Id and invalid Password,,"1. Go to signup page 
+2. Enter above fields with valid details
+3. Enter Email Id without proper punctuation mark
+4. Enter Password <8 Characters",,"Email Id : veena125@gmail,com
+Password : abc123",,1. Go to below field with no error,Missing Punctuation mark(.) & Weak Password with < 8 characters,,FAIL
+,,,,,,,,,,,
+11,,Enter invalid Email Id and valid Password,,"1. Go to signup page
+2. Enter above fields with valid details
+3.Enter Email Id with only Numbers
+4. Enter valid Password",,"Email ID : 12345@gmail.com
+Password: abcd*1234",,1. Go to below field with no error,only numbers are not allowed in Email ID,,FAIL
+,,,,,,,,,,,
+12,,Enter Valid Email ID and invalid password,,"1. Go to signup page
+2. Enter above Fields with valid details
+3. Enter valid Email Id
+4. Enter password with emoji",,"Email Id : bhanu67@gmail.com
+Password : abc124$):",,1. Go to below field with no error,emoji's are not allowed,,FAIL
+,,,,,,,,,,,
+13,,Enter Valid Email Id and invalid Firstname,,"1. Go to signup page
+2. Enter above fields with valid details
+3. Enter valid Email ID 
+4. Enter First Name with special characters with numbers",,"Email ID : zwq176@gmail.com
+Password : 543$",,1.  Go to below field with no error,only with numbers and special characters in password are not allowed,,FAIL
+,,,,,,,,,,,
+14,,Enter invalid Email Id and valid First name,,"1. Go to signup page 
+2. Enter above fields with valid details
+3. Enter Email Id with (.)
+4. Enter valid First name ",,"Email Id :  .jhon@gmail.com
+Password : jhon#764",,1. Go to below field with no error,. Are not allowed in first character,,FAIL
+,,,,,,,,,,,
+15,,Enter invalid Password and invalid First name,,"1. Go to signup page
+2. Enter above fields with valid details
+3. Enter Password with repeated characters
+4. Enter First Name with Extra space",,"Password : qqqqqq222
+First Name : ""   jhon""",,1. G to below field with no error,"repeate characters , extra spaces are not allowed",,FAIL
+,,,,,,,,,,,
+16,,Enter confirm Password,,"1. Go to signup page
+2. Enter above fields with valid details
+3. Enter Password that should match",,Password : Jhon#123,,1. Go to below field with no error,Sucessfully moved to below fields,,PASS
+,,,,,,,,,,,
+17,,Enter invalid confirm password,,"1. Go to signup page
+2. Enter above fields with valid details
+3. Enter the password with little changes with actual password",,Password : jhon#124,,1. Go to below fields with no error,Password is Mismatched,,FAIL
+,,,,,,,,,,,
+18,,Enter Captcha,,"1. Go to signup page
+2. Enter above fields with valid details
+3. Enter captcha",,Captcha : mKlO23q,,1. Go to below fields with no error,Sucessfully moved to below fields,,PASS
+,,,,,,,,,,,
+19,,Enter invalid Captcha,,"1. Go to signup page 
+2. Enter above fields with valid details
+3. Enter Captcha with 1 character missing",,Captcha : mKIO2q,,1. Go to below fields with no error,invalid captcha ,,FAIL
+,,,,,,,,,,,
+20,,Check the Tersms and conditions box,,"1. Go to signup page
+2. Enter above fields with valid details
+3. check the terms and conditions box",,checked,,1. Go to below fields with no error ,Sucessfully moved to next field,,PASS
+,,,,,,,,,,,
+21,,Uncheck the Terms and conditions box,,"1. Go to signup page
+2. Enter above fields with valid details
+3. uncheck terms and conditions box",,Unchecked,,1. Go to below fields with no error,unchecked the T&C field,,FAIL
+,,,,,,,,,,,
+22,,click on submit button,,Finally click on submit after succesfully Entered all fields,,checked,,Sucessfully created an account,Sucessfully registered,,PASS
