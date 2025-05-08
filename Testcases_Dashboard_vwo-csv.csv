@@ -1,0 +1,36 @@
+,,,,,,,"Test Case VWO.app.com
+Project Name : vwo app
+ModuleName :Dashboard
+Created by : T Bhagya
+Created Date : 08-05-2025",,,
+,,,,,,,,,,
+Test Case ID,,Test Case Scenario,,Test Case Steps,,Test Data,Expected Result,Actual Result,,Status(P/F)
+1,,Dashboard loading,,"1. Go to login page
+2. Enter login details correctly
+3. Check Remember me field
+4. click on login button
+5. Page will redirects to Dashboard page",,"Email ID : bent123@gmail.com
+Password : a6by#we",Sucessfully redirected to Dashboard page,Sucessfully redirected into dashboard page,,PASS
+,,,,,,,,,,
+2,,Unloading Dashboard page,,"1. Go to login page
+2. Enter login details correctly
+3. Check the Remember me field
+4.  select images incorrectly for "" I'm not robot field( until the users select 1 or 3 correct images , it will not display  I'm not robot  checkbox ) after sucessfully completion of i'm not robot feild , it will redirected to Dashboard page",,"Email ID : kent375@gmail.com
+Password : q1f2g4$we",Sucessfully redirected to Dashboard page ,"Selected incorrect images for the I'm not robot"" check box field",,FAIL
+,,,,,,,,,,
+3,,Display the Greeting Message,,"1.Go to login page
+2. Enter login details correctly
+3. Check Remember me field 
+4. click on login button
+5. After redirecting to login page , Greeting popup will dislayed on screen of application",,"Email ID : netra2@gmail.com
+Password : kalu379#q2","Greeting message Displayed Sucessfully
+   "" Hi netra welcome to VWO app ): """,""" Hi netra welcome to vwo app ): """,,PASS
+,,,,,,,,,,
+4,,User Name is null in Greeting Message,,"1. Go to login page
+2. leave user name blank
+3. Enter login details correctly
+4. check Remember me field
+5. click on login button ",,"Email ID : Tom80@gmail.com
+Password : juli#786","Greeting message Dispalyed Successfully
+"" Hi Tom welcome to VWO app""",""" Hi welcome to vwo app ): ""  
+",,FAIL
